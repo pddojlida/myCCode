@@ -9,24 +9,25 @@
 #include <stdlib.h>
 #include <time.h>
 
-void guessTheNumber(void); // function prototype
-int correctNumber(int, int); // function prototype
+void guessTheNumber(void); // Function prototype that does not take an input or return an output.
+int correctNumber(int, int); // Function prototype that takes two inputs of int type and returns an int.
 
+// main function returns an int ...
 int main(void)
 {
-   // srand(time(0)); // seed random number generator
-   guessTheNumber();
+   srand(time(0)); // The srand function uses the time fucntion to seed a random number. Q. HOW DOES THIS INTERACT WITH THE REST???
+   guessTheNumber(); // A call to the guessTheNumber fucntion which 
 } // end main
 
-// guessTheNumber generates numbers between 1 and 50
-// and checks user's guess
+// guessTheNumber generates numbers between 1 and 50,
+// checks the user's guess, and tracks the number of guesses.
 void guessTheNumber(void)
 {
-   int answer; // randomly generated number
-   int guess; // user's guess
-   int respoonse; // 1 or 2 response to continue game
-   int guesses; // keeps track of how many guesses the user has made 
-   int luckiness; // lets the user know how lucky they are 
+   int answer; // Randomly generated number.
+   int guess; // User's guess.
+   int respoonse; // 1 or 2 response to continue game.
+   int guesses; // Keeps track of how many guesses the user has made.
+   int luckiness; // Lets the user know how lucky they are.
 
    // loop until user types 2 to quit game
    do {
