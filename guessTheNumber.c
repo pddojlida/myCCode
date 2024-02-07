@@ -1,5 +1,5 @@
 // Using a seeding approach to create truly random numbers, 
-// the program genarates a random number between 1 and 50 for the user to guess. 
+// the program genarates a random number between 1 and 10 for the user to guess. 
 // The user choose three numbers at once.
 // The main addition to the program is that the program keeps track of how many
 // guesses the user has made and uses this to determine how lucky the user is.
@@ -9,49 +9,53 @@
 #include <stdlib.h>
 #include <time.h>
 
-void guessTheNumber(void); // Function prototype that does not take an input or return an output.
+void guessTheNumber(void);   // Function prototype that does not take an input or return an output.
 int correctNumber(int, int); // Function prototype that takes two inputs of int type and returns an int.
+void checkLuck(int);         // Function prototype that takes one input of int type and returns nothing. 
+                             // The checkLuck function puts directly instead of returning a value.
 
-// main function returns an int ...
-int main(void)
-{
-   srand(time(0)); // The srand function uses the time fucntion to seed a random number. Q. HOW DOES THIS INTERACT WITH THE REST???
+
+int main(void) { // main function returns an int i.e., a 0, does not take any parameters.
+   srand(time(0)); // The srand function uses the time fucntion to seed a random number. 
+                   // The time returns the the current time in seconds. 
+                   // Then, the rand function generates a sequence from the "seed".
+
    guessTheNumber(); // A call to the guessTheNumber fucntion which 
-} // end main
+} // end function main
 
-// guessTheNumber generates numbers between 1 and 50,
-// checks the user's guess, and tracks the number of guesses.
-void guessTheNumber(void)
-{
-   int answer; // Randomly generated number.
-   int guess; // User's guess.
-   int respoonse; // 1 or 2 response to continue game.
-   int guesses; // Keeps track of how many guesses the user has made.
-   int luckiness; // Lets the user know how lucky they are.
 
-   // loop until user types 2 to quit game
-   do {
+void guessTheNumber(void) { // guessTheNumber generates numbers between 1 and 10,
+                            // then checks the user's guess, and also tracks the number of guesses.                      
+   
+   int answer;       // Randomly generated number.
+   int guess;        // User's guess.
+   int respoonse;    // 1 or 2 response to continue game.
+   int guesses = 0;  // Keeps track of how many guesses the user has made and it initialised to 0.
 
-     // generate random number between 1 and 50, 
-     // and wherein 1 is a shift and 50 is a scaling factor
-      answer = 1 + rand() % 50; 
-
-      // prompting for the user to enter a number as a guess
-      puts("I have generated a number between 1 and 50.\n" 
-           "Guess the number to earn $50! Just kidding!\n"
-           "The more guesses you take, the less lucky you are!\n"
+   do {  // loop until user types 2 to quit game
+     
+      answer = 1 + rand() % 10; // generate random number between 1 and 10,
+                                // and wherein 1 is a shift and 10 is a scaling factor
+      
+      puts("I have generated a number between 1 and 10.\n" // prompting for the user to enter a number as a guess
+           "The fewer guesses you make to guess the number, the more lucky you are!\n"
            "Please type your guess: ");
      
      // reading the user's entered number 
      scanf("%d", &guess);
 
       // loop until correct number
-      while (!isCorrect(guess, answer)) 
+      while (!isCorrect(guess, answer)) {
          scanf("%d", &guess);
-
+         guesses++;
+      }
+      
       // prompt for another game
-      puts("\nExcellent! You guessed the number!\n"
-         "Would you like to play again?");
+      puts("\nExcellent! You guessed the number!"
+      checkLukc(guesses);   
+      puts("\nWould you like to play again?");
+      
+      guesses = 0;
       printf("%s", "Please type ( 1=yes, 2=no )? ");
       scanf("%d", &response);
 
@@ -59,15 +63,17 @@ void guessTheNumber(void)
    } while (response == 1);
 } // end function guessGame
 
-// isCorrect returns true if g equals a
-// if g does not equal a, displays hint
-int isCorrect(int g, int a)
-{
-   // guess is correct
-   if (g == a)
-      return 1;
 
-   // guess is incorrect; display hint
+
+int isCorrect(int g, int a) {   // isCorrect returns true if g equals a,
+                                // but if g does not equal a, a hint is displayed.
+   
+   if (g == a) // Guess is correct.
+      return 1;
+   
+   if (g > 10) // Reminds the user that they need to guess between 1 and 10.
+      puts("That number is outside of the range you are supposed to guess within!");
+   
    if (g < a)
       printf( "%s", "Too low. Try again.\n? " );
    else
@@ -76,6 +82,19 @@ int isCorrect(int g, int a)
    return 0;
 } // end function isCorrect
 
+void checkLuck(int) {
+   
+   if (guessesNumber =< 2)
+      return puts("/n You are very lucky!"
+         "Buy a lottery ticket!");
+   if (guessesNumber > 2 && =<6)
+      return puts("/n You are a little lucky!"
+         "Maybe buy a lottery ticket?");
+   if (guessesNumber >= 10 && >7)
+      return puts("/n You are not that lucky! Sorry");
+   
+}
 
 
-/**************************************************************************
+
+
