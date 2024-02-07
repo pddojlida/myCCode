@@ -49,11 +49,11 @@ void guessTheNumber(void) { // guessTheNumber generates numbers between 1 and 10
          guesses++;           // Counts how many guesses the user is taking to guess the correct number.
       }
       
-      puts("\nExcellent! You guessed the number!"); 
+      puts("Excellent! You guessed the number!"); 
       checkLuck(guesses);                      // Calls the checkLuck function to determine how lucky the user was in guessing.
       
-      puts("\nWould you like to play again?"); // Prompts the user for another game. 
-      printf("%s", "Please type ( Y=Yes, Q=No )? ");
+      puts("Would you like to play again?"); // Prompts the user for another game. 
+      puts("Please type (Y = Yes, Q = No, thanks, Quit)");
       scanf("%c", &response); 
       
    } while (response == 'Y');                  // BC Y is a character literal it requires parentheses.
