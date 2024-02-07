@@ -66,7 +66,7 @@ void guessTheNumber(void) { // guessTheNumber generates numbers between 1 and 10
 
 
 int correctNumber(int g, int a) {   // isCorrect returns true if g equals a,
-                                // but if g does not equal a, a hint is displayed.
+                                    // but if g does not equal a, a hint is displayed.
    if (g > 10) // Reminds the user that they need to guess between 1 and 10.
       puts("That number is outside of the range you are supposed to guess within!\n");
   
@@ -84,7 +84,7 @@ int correctNumber(int g, int a) {   // isCorrect returns true if g equals a,
 } // end function correctNumber.
 
 void checkLuck(int guessesNumber) { // Function determines if the user is lucky or not.  
-                                   // This is an origianl function added to the program.  
+                                    // This is an origianl function added to the program.  
    if (guessesNumber <= 2)
       return puts("You are very lucky!\n"
          "Buy a lottery ticket!\n");
