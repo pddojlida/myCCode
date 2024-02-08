@@ -1,5 +1,5 @@
 // The original program prompted the user for two numbers and then summed them.
-// This program allows the user to choose to add, subtract, multiply, or divide.
+// This very simple program allows the user to choose to add, subtract, multiply, or divide.
 
 #include <stdio.h>
 
@@ -20,20 +20,20 @@ int main(void) { // Function main begins program execution
    scanf(" %c", &operation); // read a char, space before %c to skip whitespace
 
    if (operation == 'a') {
-       result = integer1 + integer2; // Assign total to result
+       result = integer1 + integer2;  // Assign total to result
        printf("Sum is %d\n", result); // Print the sum
    }
    else if (operation == 's') {
-       result = integer1 - integer2; // Assign total to result
+       result = integer1 - integer2;         // Assign total to result
        printf("Difference is %d\n", result); // Print the difference
    }
    else if (operation == 'm') {
-       result = integer1 * integer2; // Assign total to result
+       result = integer1 * integer2;      // Assign total to result
        printf("Product is %d\n", result); // Print the product
    }
    else if (operation == 'd') {
-       if (integer2 != 0) { // Check to avoid division by zero
-           result = integer1 / integer2; // Assign quotient to result
+       if (integer2 != 0) {                    // Check to avoid division by zero
+           result = integer1 / integer2;       // Assign quotient to result
            printf("Quotient is %d\n", result); // Print the quotient
        } else {
            printf("Cannot divide by zero.\n");
