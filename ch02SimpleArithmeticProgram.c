@@ -20,19 +20,19 @@ int main(void) { // Function main begins program execution
    scanf(" %c", &operation); // read a char, space before %c to skip whitespace
 
    if (operation == 'a') {
-       result = integer1 + integer2;  // Assign total to result
-       printf("Sum is %d\n", result); // Print the sum
+       result = integer1 + integer2;           // Assign total to result
+       printf("Sum is %d\n", result);          // Print the sum
    }
    else if (operation == 's') {
-       result = integer1 - integer2;         // Assign total to result
-       printf("Difference is %d\n", result); // Print the difference
+       result = integer1 - integer2;           // Assign total to result
+       printf("Difference is %d\n", result);   // Print the difference
    }
    else if (operation == 'm') {
-       result = integer1 * integer2;      // Assign total to result
-       printf("Product is %d\n", result); // Print the product
+       result = integer1 * integer2;           // Assign total to result
+       printf("Product is %d\n", result);      // Print the product
    }
    else if (operation == 'd') {
-       if (integer2 != 0) {                    // Check to avoid division by zero
+       if (integer2 != 0) {                    // Check to avoid division by zero - chatGPT suggestion
            result = integer1 / integer2;       // Assign quotient to result
            printf("Quotient is %d\n", result); // Print the quotient
        } else {
@@ -40,7 +40,7 @@ int main(void) { // Function main begins program execution
        }
    }  
    else {
-       printf("Invalid operation.\n");
+       printf("Invalid operation.\n");         // ChatGPT suggestion
    }
 
    return 0; // End function main
