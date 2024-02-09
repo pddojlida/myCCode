@@ -1,7 +1,7 @@
 // Using if statements, relational 
 // operators, and equality operators - but not ">=" or "<="
 // The original code used only two numbers, 
-// this code is extended to use three numbers
+// this code is extended to use three numbers 
 
 #include <stdio.h>
 
