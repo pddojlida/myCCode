@@ -44,27 +44,27 @@ int main(void) {
 
    
    if (num1 < num2) { 
-      printf( "%d is less than %d\n", num1, num2 );
+      printf("%d is less than %d\n", num1, num2);
    } // end if
 
    if (num1 > num2) {
-      printf( "%d is greater than %d\n", num1, num2 );
+      printf("%d is greater than %d\n", num1, num2);
    } // end if
 
    if (num2 < num3) { 
-      printf( "%d is less than %d\n", num1, num2 );
+      printf("%d is less than %d\n", num2, num3);
    } // end if
 
    if (num2 > num3) {
-      printf( "%d is greater than %d\n", num1, num2 );
+      printf("%d is greater than %d\n", num2, num3);
    } // end if
 
    if (num1 < num3) { 
-      printf( "%d is less than %d\n", num1, num2 );
+      printf("%d is less than %d\n", num1, num3);
    } // end if
 
    if (num1 > num3) {
-      printf( "%d is greater than %d\n", num1, num2 );
+      printf("%d is greater than %d\n", num1, num3);
    } // end if
  
 } // end function main
