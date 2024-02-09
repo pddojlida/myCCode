@@ -19,7 +19,6 @@ int main(void) {
    
    if ( num1 == num2 == num3) { // if block 1 checks equality
       printf("All the numbers are equal\n");
-      printf("%d is equal to %d\n", num1, num2);
    } 
    else if (num1 == num2) {
       printf("%d is equal to %d\n", num1, num2);
