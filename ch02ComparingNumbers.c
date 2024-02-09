@@ -1,5 +1,6 @@
 // Using if statements, relational 
 // operators, and equality operators - but not ">=" or "<="
+// because this is redundant
 // The original code used only two numbers, 
 // this code is extended to use three numbers 
 
