@@ -26,8 +26,7 @@ int main(void) { // Start function main.  Function returns an int i.e., a 0, doe
 } // End function main.
 
 void guessTheNumber(void) { // function guessTheNumber generates numbers between 1 and 10,
-                            // checks the user's guess, and also tracks the number of guesses.                      
-   
+                            // checks the user's guess, and also tracks the number of guesses.                         
    int answer;       // Stores a randomly generated number.
    int guess;        // Stores the user's guess.
    int guesses;      // Keeps track of how many guesses the user has made.
@@ -43,8 +42,7 @@ void guessTheNumber(void) { // function guessTheNumber generates numbers between
       
       puts("I have generated a number between 1 and 10.\n" // Prompting for the user to enter a number as a guess.
            "The fewer guesses you make to guess the number, the more lucky you are!\n"
-           "Please type your guess: ");
-     
+           "Please type your guess: ");    
       scanf("%d", &guess);  // Reading in the number entered by the user.
 
       while (!correctNumber(guess, answer)) {  // Loops until the correct number is entered by the user.
@@ -53,8 +51,7 @@ void guessTheNumber(void) { // function guessTheNumber generates numbers between
       }
       
       puts("Excellent! You guessed the number!\n"); 
-      checkLuck(guesses);                       // Calls the checkLuck function to determine how lucky the user was in guessing.
-      
+      checkLuck(guesses);                       // Calls the checkLuck function to determine how lucky the user was in guessing.    
       puts("Would you like to play again?\n");  // Prompts the user for another game. 
       puts("Please type (Y = Yes, Q = No, thanks, Quit)");
       scanf(" %c", &response); 
@@ -67,22 +64,18 @@ void guessTheNumber(void) { // function guessTheNumber generates numbers between
 int correctNumber(int g, int a) {  // Function isCorrect returns true if g equals a,
                                    // But if g does not equal a, a hint is displayed.
    if (g > 10) // Reminds the user that they need to guess between 1 and 10.
-      puts("That number is outside of the range you are supposed to guess within!\n");
-  
+      puts("That number is outside of the range you are supposed to guess within!\n");  
    if (g == a)
-      return 1;
-  
+      return 1; 
    if (g < a)
-      printf("%s", "Too low. Try again.\n" );
-     
+      printf("%s", "Too low. Try again.\n" );    
    else
       printf("%s", "Too high. Try again.\n" );
-
    return 0;
   
-}  // end function correctNumber.
+}  // End function correctNumber.
 
-void checkLuck(int guessesNumber) {  // Function determines if the user is lucky or not.  
+void checkLuck(int guessesNumber) {  // Function checkLuck determines if the user is lucky or not.  
                                      // This is an origianl function added to the program.  
    if (guessesNumber <= 2)
       return puts("You are very lucky!\n"
@@ -93,7 +86,7 @@ void checkLuck(int guessesNumber) {  // Function determines if the user is lucky
    else if (guessesNumber >= 7)
       return puts("You are not that lucky! Sorry.\n");  
   
-}  // end function checkLuck.
+}  // End function checkLuck.
 
 
 
