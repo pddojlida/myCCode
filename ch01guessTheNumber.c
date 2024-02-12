@@ -1,3 +1,5 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+
 // Using a seeding to create truly random numbers the program 
 // genarates a random number between 1 and 10 for the user to guess. 
 // The main addition to the program is that the program keeps track of how many
