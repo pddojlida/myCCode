@@ -1,3 +1,5 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+
 // Using if statements, relational operators, and equality operators, 
 // but not ">=" or "<=" because these are somewhat redundant.
 // The original code used only two numbers as inputs, 
