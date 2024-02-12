@@ -1,8 +1,7 @@
-// Using if statements, relational 
-// operators, and equality operators - but not ">=" or "<="
-// because this is redundant
-// The original code used only two numbers, 
-// this code is extended to use three numbers 
+// Using if statements, relational operators, and equality operators, 
+// but not ">=" or "<=" because these are somewhat redundant.
+// The original code used only two numbers as inputs, 
+// this code is extended to use three numbers. 
 
 #include <stdio.h>
 
@@ -16,9 +15,9 @@ int main(void) {
    int num2; // second number to be read from user
    int num3; // third number to read from user
    
-   scanf("%d %d %d", &num1, &num2, &num3); // read three integers
+   scanf("%d %d %d", &num1, &num2, &num3);  // Read three integers
    
-   if ( num1 == num2 == num3) { // if block 1 checks equality
+   if ( num1 == num2 == num3) {  // if block 1 checks equality
       printf("All the numbers are equal\n");
    } 
    else if (num1 == num2) {
@@ -32,7 +31,7 @@ int main(void) {
    } // end if block 1
 
    
-   if (num1 != num2) { 
+   if (num1 != num2) {  // if statements check for non-equality
       printf("%d is not equal to %d\n", num1, num2);
    } 
    if (num2 != num3) {
@@ -43,7 +42,7 @@ int main(void) {
    }
 
    
-   if (num1 < num2) { 
+   if (num1 < num2) {  // if statements check for inequality
       printf("%d is less than %d\n", num1, num2);
    } // end if
 
