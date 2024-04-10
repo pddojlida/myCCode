@@ -6,8 +6,8 @@ int main(void)
 	unsigned int y;
 	unsigned int s;
 
-	// prompt user for input
-	printf("%s", "This program prints a repeated sequence a custom shaped rectangle.\n");
+	// Explain the function of the program and prompt user for input
+  printf("%s", "This program prints a repeated sequence of a custom shaped rectangle.\n");
   printf("%s", "The sequence is as follows.  First, the rectangle is printed with its x and y dimensions normally.\n");
   printf("%s", "Then, the rectangle is printed with its x and y dimensions inverted.\n");
   printf("%s", "This defines a sequence which can be reapeated by providing the target number of repetitions.\n");
