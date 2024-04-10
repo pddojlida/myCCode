@@ -17,7 +17,7 @@ int main(void)
    char x;
 
    puts("This program calculates your WAM, giving extra weight to your A and B grades." );
-   puts("Enter the letter grades A to E." );
+   puts("Enter the letter grades A to E with spaces in between." );
    puts("Enter the 'x' character to end input." );
    int grade; // one grade 
 
@@ -74,10 +74,10 @@ int main(void)
    printf("E: %u\n", eCount); 
 
    WAM = ((1.5*(90*aCount)) + (1.25*(80*bCount)) + (70*cCount) + (60*dCount) + (50*eCount)) / (aCount + bCount + cCount + dCount + eCount);
-   printf("The weighted WAM is: %1f\n", WAM); // Format to 1 decimal place
+   printf("The weighted WAM is: %.2f\n", WAM); // Format to 1 decimal place
 
    uWAM = ((90*aCount) + (80*bCount) + (70*cCount) + (60*dCount) + (50*eCount)) / (aCount + bCount + cCount + dCount + eCount);
-   printf("The unweighted WAM is: %1f\n", uWAM); // Format to 1 decimal place
+   printf("The unweighted WAM is: %.2f\n", uWAM); // Format to 1 decimal place
 } 
 
 
