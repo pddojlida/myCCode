@@ -1,4 +1,5 @@
 // Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// No IDE used
 
 // This program prints a pattern made from a "<" or ">" character depending if the row is an odd or even row.
 // The original program printed a matrix of ten rows and ten columns.
