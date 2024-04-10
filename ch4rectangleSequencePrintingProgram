@@ -4,7 +4,7 @@ int main(void)
 {
 	unsigned int x;
 	unsigned int y;
-	unsigned int h;
+	unsigned int s;
 
 	// prompt user for input
 	printf("%s", "This program prints a repeated sequence a custom shaped rectangle.\n");
@@ -19,10 +19,10 @@ int main(void)
 	scanf("%u%u", &x, &y); // read values for x and y
 
   printf("%s", "Now enter how many times you would like to see the sequence of rectangles repeat in the range from 1 to 100: ");
-	scanf("%u", &h); // read values for x and y
+	scanf("%u", &s); // read values for x and y
 
   // Outermost loop determining the number of repetitions of the sequence
-  for (unsigned int h = 1; i <= h; ++h) { // count from 1 to h
+  for (unsigned int h = 1; h <= s; ++h) { // count from 1 to h
       puts("");
 
       // Normal dimensions loop
