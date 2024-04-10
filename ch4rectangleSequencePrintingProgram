@@ -9,7 +9,7 @@ int main(void)
 	printf("%s", "This program prints a repeated sequence a custom shaped rectangle.\n");
   printf("%s", "The sequence is as follows.  First, the rectangle is printed with its x and y dimensions normally.\n");
   printf("%s", "Then, the rectangle is printed with its x and y dimensions inverted.\n");
-  printf("%s", "This defines a sequence which can be reapeated by providing the target number of repetitions.\");
+  printf("%s", "This defines a sequence which can be reapeated by providing the target number of repetitions.\n");
 
   printf("%s", "Enter two unsigned integers in the range 1 to 20 to define the recangle's height (i.e., the y dimension): ");
 	scanf("%u%u", &x, &y); // read values for x and y
