@@ -18,7 +18,7 @@ int main(void)
   printf("%s", "Now enter how many times you would like to see the sequence of rectangles repeat in the range from 1 to 100: ");
 	scanf("%u", &s); // read values for x and y
 
-  // Outermost loop determining the number of repetitions of the sequence
+  // Outermost loop determining the number of repetitions of the sequence - note that there is no limit on how many can be printed!
   for (unsigned int h = 1; h <= s; ++h) { // count from 1 to h
 
       // Normal dimensions loop
