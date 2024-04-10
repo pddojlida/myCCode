@@ -1,4 +1,5 @@
 // Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// No IDE used
 
 // This program demonstrates incrementing and decrementing  
 // The original program only pre and post incremented
