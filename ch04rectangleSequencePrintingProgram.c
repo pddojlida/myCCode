@@ -1,5 +1,6 @@
 // Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
 // The original program is below the extended program
+// No IDE used
 
 #include <stdio.h>
 
