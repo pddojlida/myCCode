@@ -12,10 +12,7 @@ int main(void)
   printf("%s", "Then, the rectangle is printed with its x and y dimensions inverted.\n");
   printf("%s", "This defines a sequence which can be reapeated by providing the target number of repetitions.\n");
 
-  printf("%s", "Enter two unsigned integers in the range 1 to 20 to define the recangle's height (i.e., the y dimension): ");
-	scanf("%u%u", &x, &y); // read values for x and y
-
-  printf("%s", "Enter two unsigned integers in the range 1 to 20 to define the rectangle's width (i.e., the x dimension): ");
+  printf("%s", "Enter two unsigned integers in the range 1 to 20 to define the recangle's height (x) and width (y): ");
 	scanf("%u%u", &x, &y); // read values for x and y
 
   printf("%s", "Now enter how many times you would like to see the sequence of rectangles repeat in the range from 1 to 100: ");
@@ -23,7 +20,6 @@ int main(void)
 
   // Outermost loop determining the number of repetitions of the sequence
   for (unsigned int h = 1; h <= s; ++h) { // count from 1 to h
-      puts("");
 
       // Normal dimensions loop
 	    for (unsigned int i = 1; i <= y; ++i) { // count from 1 to y
