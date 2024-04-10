@@ -1,4 +1,5 @@
 // Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// No IDE used
 
 // Using a seeding to create truly random numbers the program 
 // genarates a random number between 1 and 10 for the user to guess. 
