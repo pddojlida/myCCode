@@ -1,4 +1,5 @@
 // Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// No IDE used
 
 // Using if statements, relational operators, and equality operators, 
 // but not ">=" or "<=" because these are somewhat redundant.
