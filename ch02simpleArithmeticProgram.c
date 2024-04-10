@@ -1,4 +1,5 @@
 // Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// No IDE used
 
 // The original program prompted the user for two numbers and then summed them.
 // This very simple program allows the user to choose to add, subtract, multiply, or divide.
