@@ -4,6 +4,7 @@ int main(void)
 {
 	unsigned int x;
 	unsigned int y;
+	unsigned int h;
 
 	// prompt user for input
 	printf("%s", "This program prints a repeated sequence a custom shaped rectangle.\n");
