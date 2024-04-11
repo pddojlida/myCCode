@@ -82,8 +82,8 @@ int main(void){
    }
 
    // calculates and outputs fmod(x, y)
-   printf("fmod(%.3f/%.3f) = %.3f\n", 13.657, 2.333, 
-   fmod(13.657, 2.333));
+   printf("fmod(%.3f/%.3f) = %.3f\n", 999.000, 2.000, fmod(999.000, 2.000));
+   printf("fmod(%.3f/%.3f) = %.3f\n", fmod(999.000, 2.000), 2.000, fmod(fmod(999.000, 2.000), 2.000));
 
    // calculates and outputs sin(x)
    printf("sin(%.1f) = %.1f\n", 0.0, sin(0.0));
