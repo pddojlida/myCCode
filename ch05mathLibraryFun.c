@@ -61,12 +61,13 @@ int main(void){
    puts(" ");
 
    // calculates and outputs ceil(x)
-   for (n = 1; n <= 5; n++) {
+   for (n = 1; n <= 3; n++) {
       nDec = n;
       for (o = 1; o <10; o++) {
          nDec = nDec + 0.1;   
          printf("ceil(%.1f) = %.1f\n", nDec, ceil(nDec));
          printf("floor(%.1f) = %.1f\n", nDec, floor(nDec));
+         puts(" ");
       }
    }
 ///////////////////////////////////////////////////////////////////////////////// HERE   
