@@ -81,9 +81,12 @@ int main(void){
       printf("pow(%.1d, %.1d) = %.1f\n", pow2, pow1, pow(pow2, pow1));
    }
 
-   // calculates and outputs fmod(x, y)
-   printf("fmod(%.3f/%.3f) = %.3f\n", 999.000, 2.000, fmod(999.000, 2.000));
-   printf("fmod(%.3f/%.3f) = %.3f\n", fmod(999.000, 2.000), 2.000, fmod(fmod(999.000, 2.000), 2.000));
+   /// calculates and outputs fmod(x, y)
+   float x = 999.888;
+   float y = 888.999;
+   printf("fmod(%.3f/%.3f) = %.3f\n", x, y, fmod(x, y));
+   printf("fmod(%.3f/%.3f) = %.3f\n", fmod(x, y), fmod(y, x), fmod(fmod(x, y), fmod(y, x)));
+   puts("Seems incorrect! But actually fmod apparently calculates the remiander of the division, not the result!");
 
    // calculates and outputs sin(x)
    printf("sin(%.1f) = %.1f\n", 0.0, sin(0.0));
