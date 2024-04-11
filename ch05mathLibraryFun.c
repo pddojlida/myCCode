@@ -27,6 +27,7 @@ int main(void){
    puts(" ");
    printf("You can see that the square has 16.0 #'s. If you count how many #'s are on one side you get the square root.\n");
    puts(" ");
+   
    // calculates and outputs the cube root
    printf("Now, imagine a cube %.1f elements wide, %.1f elements tall, and %.1f elements deep.\nIf you count how many elements are on one edge, you get the cube root.\n", cbrt(27.0), cbrt(27.0), cbrt(27.0));
    puts(" ");
@@ -34,7 +35,6 @@ int main(void){
    // calculates and outputs the exponential function e to the x
    puts("Check out the following output sequence of exponential values and how they are converted back to their intputs.");
    puts(" ");
-   
    for (k = 1; k <= 9; k++) {
        printf("exp(%d) = %.2f\n", k, exp(k));
        puts(" ");
@@ -55,7 +55,6 @@ int main(void){
        printf("log10(%d) = %f\n", m, log10(m));
        puts(" ");
     }
-   }
 
    // calculates and outputs the absolute value
    puts(" ");
