@@ -6,6 +6,9 @@ unsigned int j = 0;
 unsigned int k = 0;
 unsigned int l = 0;
 unsigned int m = 1;
+unsigned int n = 0;
+unsigned int o = 0;
+float nDec = 0.0;
 
 int main(void){
 
@@ -26,7 +29,6 @@ int main(void){
    puts(" ");
    
    // calculates and outputs the exponential function e to the x
-  
    puts("Check out the following output sequence of exponential values and how they are converted back to their intputs.");
    puts(" ");
    
@@ -51,22 +53,23 @@ int main(void){
        puts(" ");
     }
    }
-   
 
-   
    // calculates and outputs the absolute value
-   printf("fabs(%.1f) = %.1f\n", 13.5, fabs(13.5));
-   printf("fabs(%.1f) = %.1f\n", 0.0, fabs(0.0));
-   printf("fabs(%.1f) = %.1f\n", -13.5, fabs(-13.5));
-   
-   // calculates and outputs ceil(x)
-   printf("ceil(%.1f) = %.1f\n", 9.2, ceil(9.2));
-   printf("ceil(%.1f) = %.1f\n", -9.8, ceil(-9.8));
+   puts(" ");
+   printf("fabs(%.1f) - fabs(%.1f) = %.1f\n", 13.5,  (fabs(fabs(13.5) - fabs(-26.5)));
+   puts("How can 13.5 - (-26.5) = - 13.5? we are dealing in values, not numbers.");
+   puts(" ");
 
-   // calculates and outputs floor(x)
-   printf("floor(%.1f) = %.1f\n", 9.2, floor(9.2));
-   printf("floor(%.1f) = %.1f\n", -9.8, floor(-9.8));
-   
+   // calculates and outputs ceil(x)
+   for (n = 1; n <= 5; n++) {
+      nDec = n;
+      for (o = 1; o <10; o++) {
+         nDec = nDec + 0.1;   
+         printf("ceil(%.1f) = %.1f\n", nDec, ceil(nDec));
+         printf("floor(%.1f) = %.1f\n", nDec, floor(nDec));
+      }
+   }
+///////////////////////////////////////////////////////////////////////////////// HERE   
    // calculates and outputs pow(x, y)
    printf("pow(%.1f, %.1f) = %.1f\n", 2.0, 7.0, pow(2.0, 7.0));
    printf("pow(%.1f, %.1f) = %.1f\n", 9.0, 0.5, pow(9.0, 0.5));
