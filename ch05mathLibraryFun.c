@@ -12,6 +12,7 @@ float nDec = 0.0;
 unsigned int p = 0;
 unsigned int pow1 = 10;
 unsigned int pow2 = 0;
+unsigned int q = 0;
 
 int main(void){
 
@@ -47,7 +48,6 @@ int main(void){
        printf("log(%f) = %.1f\n", exp(l), log(exp(l)));
        puts(" ");
    }
-   puts(" ");
  
    // calculates and outputs the logarithm (base 10)
    while (m <100000) {
@@ -57,8 +57,7 @@ int main(void){
     }
 
    // calculates and outputs the absolute value
-   puts(" ");
-   printf("fabs(%.1f) - fabs(%.1f) = %.1f\n", 13.5,  (fabs(fabs(13.5) - fabs(-26.5)));
+   printf("fabs(%.1f) - fabs(%.1f) = %.1f\n", 13.5,  -26.5, (fabs(fabs(13.5) - fabs(-26.5))));
    puts("How can 13.5 - (-26.5) = - 13.5? we are dealing in values, not numbers.");
    puts(" ");
 
@@ -80,23 +79,24 @@ int main(void){
       printf("pow(%.1d, %.1d) = %.1f\n", pow1, pow2, pow(pow1, pow2));
       printf("pow(%.1d, %.1d) = %.1f\n", pow2, pow1, pow(pow2, pow1));
    }
+    puts("");
 
    /// calculates and outputs fmod(x, y)
    float x = 999.888;
    float y = 888.999;
    printf("fmod(%.3f/%.3f) = %.3f\n", x, y, fmod(x, y));
    printf("fmod(%.3f/%.3f) = %.3f\n", fmod(x, y), fmod(y, x), fmod(fmod(x, y), fmod(y, x)));
-   puts("Seems incorrect! But actually fmod apparently calculates the remiander of the division, not the result!");
-
-   // calculates and outputs sin(x)
-   printf("sin(%.1f) = %.1f\n", 0.0, sin(0.0));
+   puts("Seems incorrect! But actually fmod() apparently calculates the remiander of the division, not the result!");
+   puts("");
    
-   // calculates and outputs cos(x)
-   printf("cos(%.1f) = %.1f\n", 0.0, cos(0.0));
-   
-   // calculates and outputs tan(x)
-   printf("tan(%.1f) = %.1f\n", 0.0, tan(0.0));
-} 
+   // calculates and outputs sin(x), cos(x), and tan(x) adjacent to each other for the same input
+   for (q = 1; q <= 10; q++) {
+        printf("sin(%.6f) = %.6f\n", (float)q, sin(q));
+        printf("cos(%.6f) = %.6f\n", (float)q, cos(q));
+        printf("tan(%.6f) = %.6f\n", (float)q, tan(q));
+        puts("");
+    }
+} // end of program
 
 /*
 #include <stdio.h>
