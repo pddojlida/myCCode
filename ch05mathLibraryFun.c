@@ -1,3 +1,8 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// The original program is below the extended program
+// No IDE used
+// Lots of changes to show the math working a bit more.
+
 #include <stdio.h>
 #include <math.h>
 
@@ -99,6 +104,7 @@ int main(void){
 } // end of program
 
 /*
+
 #include <stdio.h>
 #include <math.h>
 
