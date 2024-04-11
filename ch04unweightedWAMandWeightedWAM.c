@@ -1,4 +1,9 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// The original program is below the extended program
+// No IDE used
+
 // Counting letter grades with switch
+
 // This program calculates the WAM (Weighted Average Marks),
 // adding extra weight to the 'b' and 'a' marks.
 // It also shows the unweighted WAM.
