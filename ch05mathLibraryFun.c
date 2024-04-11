@@ -73,9 +73,8 @@ int main(void){
          puts(" ");
       }
    }
-///////////////////////////////////////////////////////////////////////////////// HERE   
+ 
    // calculates and outputs pow(x, y)
-
    for (p = 1; p <= 9; p++) {
       pow1 = pow1 - 1;
       pow2 = pow2 + 1;
@@ -83,10 +82,9 @@ int main(void){
       printf("pow(%.1d, %.1d) = %.1f\n", pow2, pow1, pow(pow2, pow1));
    }
 
-
    // calculates and outputs fmod(x, y)
    printf("fmod(%.3f/%.3f) = %.3f\n", 13.657, 2.333, 
-      fmod(13.657, 2.333));
+   fmod(13.657, 2.333));
 
    // calculates and outputs sin(x)
    printf("sin(%.1f) = %.1f\n", 0.0, sin(0.0));
