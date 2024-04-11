@@ -5,6 +5,7 @@ unsigned int i = 0;
 unsigned int j = 0;
 unsigned int k = 0;
 unsigned int l = 0;
+unsigned int m = 1;
 
 int main(void){
 
@@ -42,12 +43,16 @@ int main(void){
        puts(" ");
    }
    puts(" ");
-
-   
+ 
    // calculates and outputs the logarithm (base 10)
-   printf("log10(%.1f) = %.1f\n", 1.0, log10(1.0));
-   printf("log10(%.1f) = %.1f\n", 10.0, log10(10.0));
-   printf("log10(%.1f) = %.1f\n", 100.0, log10(100.0));
+   while (m <100000) {
+       m *= 10;  
+       printf("log10(%d) = %f\n", m, log10(m));
+       puts(" ");
+    }
+   }
+   
+
    
    // calculates and outputs the absolute value
    printf("fabs(%.1f) = %.1f\n", 13.5, fabs(13.5));
