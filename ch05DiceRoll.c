@@ -127,7 +127,7 @@ int main(void)
    else if (frequency11 > mode) {
          mode = frequency11; 
    }
-   else if (frequency12 > mode) {
+   else (frequency12 > mode) {
          mode = frequency12; 
    }
 
