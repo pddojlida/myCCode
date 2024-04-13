@@ -1,3 +1,10 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// The original program is below the extended program
+// No IDE used
+
+// The changes are that there are twice the amount of sides and
+// the mode of the dice is determined by using a series of if statements.
+
 #include <stdio.h>
 #include <stdlib.h>
 
