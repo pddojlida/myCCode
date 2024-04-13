@@ -97,37 +97,37 @@ int main(void)
    if (frequency2 > mode) {
          mode = frequency2; 
    } 
-   else if (frequency3 > mode) {
+   if (frequency3 > mode) {
          mode = frequency3; 
    }
-   else if (frequency3 > mode) {
+   if (frequency3 > mode) {
          mode = frequency3; 
    }
-   else if (frequency4 > mode) {
+   if (frequency4 > mode) {
          mode = frequency4; 
    }
-   else if (frequency5 > mode) {
+   if (frequency5 > mode) {
          mode = frequency5; 
    }
-   else if (frequency6 > mode) {
+   if (frequency6 > mode) {
          mode = frequency6; 
    }
-   else if (frequency7 > mode) {
+   if (frequency7 > mode) {
          mode = frequency7; 
    }
-   else if (frequency8 > mode) {
+   if (frequency8 > mode) {
          mode = frequency8; 
    }
-   else if (frequency9 > mode) {
+   if (frequency9 > mode) {
          mode = frequency9; 
    }
-   else if (frequency10 > mode) {
+   if (frequency10 > mode) {
          mode = frequency10; 
    }
-   else if (frequency11 > mode) {
+   if (frequency11 > mode) {
          mode = frequency11; 
    }
-   else (frequency12 > mode) {
+   if (frequency12 > mode) {
          mode = frequency12; 
    }
 
