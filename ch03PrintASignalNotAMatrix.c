@@ -3,7 +3,7 @@
 
 // This program prints a pattern made from a "<" or ">" character depending if the row is an odd or even row.
 // The original program printed a matrix of ten rows and ten columns.
-// My program is adapted to print each row with one fewer character.
+// My program is adapted to print a pattern to preint each row with fewer characters.
 // An idea for a future program is to print the characters to draw an exponential curve.
 
 #include <stdio.h>
