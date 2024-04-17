@@ -1,6 +1,6 @@
 // computing the mean, median and mode of the data.
 #include <stdio.h>
-#define SIZE 99
+#define SIZE 100
 
 // function prototypes
 void mean(const unsigned int answer[]);
@@ -10,12 +10,12 @@ void bubbleSort(unsigned int a[]);
 void printArray(const unsigned int a[]);
 
 // function main begins program execution
-int main(void)
-{
+int main(void){
+   
    unsigned int frequency[10] = {0}; // initialize array frequency
    
    // initialize array response
-   unsigned int response[SIZE] =             
+   unsigned int response[SIZE] =
       {6, 7, 8, 9, 8, 7, 8, 9, 8, 9,
        7, 8, 9, 5, 9, 8, 7, 8, 7, 8,
        6, 7, 8, 9, 3, 9, 8, 7, 8, 7,
@@ -25,7 +25,7 @@ int main(void)
        5, 6, 7, 2, 5, 3, 9, 4, 6, 4,
        7, 8, 9, 6, 8, 7, 8, 9, 7, 8,
        7, 4, 4, 2, 5, 3, 8, 7, 5, 6,
-       4, 5, 6, 1, 6, 5, 7, 8, 7};
+       4, 5, 6, 1, 6, 5, 7, 8, 7, 9};
 
    // process responses
    mean(response);
@@ -34,14 +34,13 @@ int main(void)
 }
 
 // calculate average of all response values
-void mean(const unsigned int answer[])
-{
+void mean(const unsigned int answer[]){
    printf("%s\n%s\n%s\n", "********", "  Mean", "********");
 
    unsigned int total = 0; // variable to hold sum of array elements
 
    // total response values
-   for (size_t j = 0; j < SIZE; ++j) {
+   for (size_t j = 0; j < SIZE; ++j){
       total += answer[j];
    } 
 
@@ -54,8 +53,8 @@ void mean(const unsigned int answer[])
 } 
 
 // sort array and determine median element's value
-void median(unsigned int answer[])
-{
+void median(unsigned int answer[]){
+   
    printf("\n%s\n%s\n%s\n%s", 
            "********", " Median", "********", 
            "The unsorted array of responses is");
@@ -68,15 +67,21 @@ void median(unsigned int answer[])
    printArray(answer); // output sorted array
 
    // display median element
-   printf("\n\nThe median is element %u of\n"
-           "the sorted %u element array.\n"
-           "For this run the median is %u\n\n",
-           SIZE / 2, SIZE, answer[SIZE / 2]);
+   printf("\n\nThis is the orginal code, which produces the incorrect result:\n"
+          "The median is element %u of\n"
+          "the sorted %u element array.\n"
+          "For this run the median is %u\n\n",
+          SIZE / 2, SIZE, answer[SIZE / 2]);
+
+   float realMedian = 0;
+   realMedian = (response[SIZE/2] + response[(SIZE/2)+1])/2; 
+   
+   printf("\n\nThe median element of an even number of observations\n"
+          "is correctly calculated to be: (float) %u", realMedian);     
 } 
 
 // determine most frequent response
-void mode(unsigned int freq[], const unsigned int answer[])
-{
+void mode(unsigned int freq[], const unsigned int answer[]){
    printf("\n%s\n%s\n%s\n", "********", "  Mode", "********");
 
    // initialize frequencies to 0
