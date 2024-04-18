@@ -16,29 +16,93 @@ int main(void)
       a[x] = 2 * x;
    } 
 
+   int b[SIZE]; // create array a
+
+   // create some data
+   for (size_t x = 0; x < SIZE; ++x) { 
+      b[x] = 3 * x;
+   } 
+
    printf("Enter a first integer search key: ");
-   int searchKey; // value to locate in array a
+   int searchKeyFirst; // value to locate in array a
    scanf("%d", &searchKeyFirst);
 
    printf("\nEnter a second integer search key: ");
-   int searchKey; // value to locate in array a
+   int searchKeySecond; // value to locate in array a
    scanf("%d", &searchKeySecond);
 
    
    printf("\nEnter a third integer search key: ");
-   int searchKey; // value to locate in array a
+   int searchKeyThird; // value to locate in array a
    scanf("%d", &searchKeyThird);
 
+   size_t index;
    // attempt to locate searchKey in array a 
-   size_t index = linearSearch(a, searchKey, SIZE);
+   index = linearSearch(a, searchKeyFirst, SIZE);
 
    // display results
    if (index != -1) {
-      printf("Found value at index %d\n", index);
+      printf("Found value at index %d\n in array a", index);
    } 
    else {
-      puts("Value not found");
+      puts("Value not found in array a");
    } 
+
+   // attempt to locate searchKey in array a 
+   index = linearSearch(a, searchKeySecond, SIZE);
+
+   // display results
+   if (index != -1) {
+      printf("Found value at index %d\n in array a", index);
+   } 
+   else {
+      puts("Value not found in array a");
+   } 
+   
+   // attempt to locate searchKey in array a 
+   index = linearSearch(a, searchKeyThird, SIZE);
+
+   // display results
+   if (index != -1) {
+      printf("Found value at index %d in array a\n", index);
+   } 
+   else {
+      puts("Value not found in array a");
+   } 
+
+   // attempt to locate searchKeyFirst in array b
+   index = linearSearch(b, searchKeyFirst, SIZE);
+
+   // display results
+   if (index != -1) {
+      printf("Found value at index %d in array b\n", index);
+   } 
+   else {
+      puts("Value not found in array b");
+   } 
+
+   // attempt to locate searchKeySecond in array b 
+   index = linearSearch(b, searchKeySecond, SIZE);
+
+   // display results
+   if (index != -1) {
+      printf("Found value at index %d in array b\n", index);
+   } 
+   else {
+      puts("Value not found in array b");
+   } 
+   
+   // attempt to locate searchKeyThird in array b 
+   index = linearSearch(b, searchKeyThird, SIZE);
+
+   // display results
+   if (index != -1) {
+      printf("Found value at index %d in array b\n", index);
+   } 
+   else {
+      puts("Value not found in array b");
+   } 
+   
 }
 
 // compare key to every element of array until the location is found 
