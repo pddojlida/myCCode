@@ -1,3 +1,6 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// The original program is below the extended program
+// No IDE used
 
 // Using variable-length arrays in C99.  I made a very small change that prints out the arrays 
 // in a consistant format compared to the original code.
