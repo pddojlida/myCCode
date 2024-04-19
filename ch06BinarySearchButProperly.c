@@ -1,6 +1,7 @@
 // Fig. 6.19: fig06_19.c
 // Binary search of a sorted array.
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #define SIZE 15
 
@@ -15,9 +16,9 @@ int main(void)
    int a[SIZE]; // create array a
 
    // create data
+   srand(time(0)); // place outside of the loop to ensure the seed is not the same every time 
    for (size_t i = 0; i < SIZE; ++i) {
-     srand(time(0));
-	a[i] = rand();
+	a[i] = rand() % 29; // % by 0 to 28 bc the possible remainders when any integer is divided by 29 are 0, 1, 2, ..., up to 28, with view of RAND_MAX in stdlib.h
    } 
 
    printf("%s", "Enter a number between 0 and 28: ");
