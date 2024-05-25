@@ -1,13 +1,12 @@
 #include <stdio.h>
 #define SIZE 80
+char string[SIZE]; // create char array
 
 size_t mystery2(const char *s); // prototype, size_t is an unsigned integer type in C and C++ that is used to represent the size of objects in bytes.
 void mystery3(const char *s);
 
 int main(void)
 {
-   char string[SIZE]; // create char array
-
    puts("Enter a string: ");
    scanf("%79s", string); 
    printf("%d\n", mystery2(string));
@@ -33,7 +32,7 @@ void mystery3(const char *s) {
    int num = 1;
    // loop through string and print each letter with a corresponding number, verifying the previous count
    for ( ; *s != '\0'; ++s) {
-     printf("%s %d\n", s, num++);
+     printf("%s %d\n", string[s], num++);
    } 
 }
 
