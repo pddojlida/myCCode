@@ -9,7 +9,7 @@ int main(void)
 {
    puts("Enter a string: ");
    scanf("%79s", string); 
-   printf("There are ten letters in the string %d\n", mystery2(string));
+   printf("There are %d letters in the string\n", mystery2(string));
    puts("Here they are counted individually:");
    mystery3(string);
 } 
