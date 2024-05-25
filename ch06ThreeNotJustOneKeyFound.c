@@ -3,7 +3,7 @@
 // No IDE used
 
 // Linear search of three keys in two arrays.
-// The original code only searhed for one key in one array.
+// The original code only searched for one key in one array.
 // Potential to improve the code and add some loops.
 
 #include <stdio.h>
