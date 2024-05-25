@@ -11,7 +11,7 @@ int main(void)
    puts("Enter a string: ");
    scanf("%79s", string); 
    printf("%d\n", mystery2(string));
-   mystery3();
+   mystery3(string);
 } 
 
 // What does this function do?
