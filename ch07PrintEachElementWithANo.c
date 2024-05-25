@@ -1,3 +1,10 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// The original program is below the extended program
+// No IDE used
+
+// Printing the number of elements in an array
+// The original code only printed the number.  This code also prints each element and the number of the element.
+
 #include <stdio.h>
 #define SIZE 80
 char string[SIZE]; // create char array
