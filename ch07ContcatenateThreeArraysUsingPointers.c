@@ -1,3 +1,10 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// The original program is below the extended program
+// No IDE used
+
+// Concatenation of three strings by using pointers
+// The original code only concatenated two strings
+
 #include <stdio.h>
 #define SIZE 80
 
