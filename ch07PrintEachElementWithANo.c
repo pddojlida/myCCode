@@ -9,7 +9,8 @@ int main(void)
 {
    puts("Enter a string: ");
    scanf("%79s", string); 
-   printf("%d\n", mystery2(string));
+   printf("There are ten letters in the string %d\n", mystery2(string));
+   puts("Here they are counted individually:");
    mystery3(string);
 } 
 
@@ -32,7 +33,7 @@ void mystery3(const char *s) {
    int num = 1;
    // loop through string and print each letter with a corresponding number, verifying the previous count
    for ( ; *s != '\0'; ++s) {
-     printf("%s %d\n", string[s], num++);
+     printf("%c %d\n", *s, num++);
    } 
 }
 
