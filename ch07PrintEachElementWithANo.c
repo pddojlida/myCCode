@@ -33,7 +33,6 @@ void mystery3(const char *s) {
    int num = 1;
    // loop through string and print each letter with a corresponding number, verifying the previous count
    for ( ; *s != '\0'; ++s) {
-     s++;
      printf("%s %d\n", s, num++);
    } 
 }
