@@ -12,9 +12,7 @@ int main(void)
    puts("This program shows various notations which can be used to access array elements.");
 
    // output array b using array index notation
-   puts("\nArray b printed with:\nArray index notation. ");
-   puts("This works by using the index in the bracket b[i] "
-         "to access the array element");
+   puts("\nArray b printed with:\nArray index notation. This works by using the index in the bracket b[i] to access the array element.");
 
    // loop through array b
    for (size_t i = 0; i < ARRAY_SIZE; ++i) {
@@ -22,10 +20,7 @@ int main(void)
    } 
 
    // output array b using array name and pointer/offset notation
-   puts("\nPointer/offset notation where "
-         "the pointer is the array name");
-   puts("\nThe * symbol works a little bit like a function that accesses "
-        "the first element of the array named b plus the offset"); 
+   puts("\nPointer/offset notation where the pointer is the array name. The * symbol works a little bit like a function that accesses the first element of the array named b plus the offset."); 
 
    // loop through array b
    for (size_t offset = 0; offset < ARRAY_SIZE; ++offset) {
@@ -33,9 +28,7 @@ int main(void)
    } 
 
    // output array b using bPtr and array index notation
-   puts("\nPointer index notation "
-        "works by using the pointer bPtr " 
-        "EXACTLY as if it was using the name b of the pointer");
+   puts("\nPointer index notation works by using the pointer bPtr EXACTLY as if it was using the name b of the pointer.");
 
    // loop through array b
    for (size_t i = 0; i < ARRAY_SIZE; ++i) {
@@ -43,9 +36,7 @@ int main(void)
    } 
 
    // output array b using bPtr and pointer/offset notation
-   puts("\nPointer/offset notation, " 
-        "which is exactly the same as the second example, "
-        "following the principle in the third example.");
+   puts("\nPointer/offset notation, which is exactly the same as the second example, following the principle in the third example.");
 
    // loop through array b
    for (size_t offset = 0; offset < ARRAY_SIZE; ++offset) {
