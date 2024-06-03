@@ -1,3 +1,10 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// The original program is below the extended program
+// No IDE used
+
+// The original program just calls only 3 functions.  
+// This program calls 5 functions, wherein the 5th function calls one of the first 4 functions randomally
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
