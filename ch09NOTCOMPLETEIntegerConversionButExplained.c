@@ -1,3 +1,6 @@
+// NEED TO FIX THE ORDER OF HOW THINGS PRINT 
+// Put a line in between each example
+// Reduce the width of the code
 
 // Using the integer conversion specifiers
 
