@@ -1,6 +1,3 @@
-// NEED TO FIX THE ORDER OF HOW THINGS PRINT 
-// Put a line in between each example
-// Reduce the width of the code
 
 // Using the integer conversion specifiers
 
@@ -34,21 +31,20 @@ int main(void)
    printf("%hd\n", 32000);
    puts("");
    
-   printf("Now, the number 2000000000 is written to the screen using the following code: printf(\"%%ld\", 2000000000);.\n"); 
-   printf("%ld\n", 2000000000);
+   printf("Now, the number 2000000000 is written to the screen using the following code: printf(\"%%ld\", 2000000000L);.\n"); 
+   printf("An \"L\" is also necessary at the end of the 2000000000L.\n");
+   printf("%ld\n", 2000000000L);
    puts("");
    
    printf("In the following code the \"%%o\" argument prints 455 below in octal form: printf(\"%%o\", 455);.\n");
    printf("%o\n", 455);
    puts("");
    
-   printf("Using the \"%%u\" argument for -455 generates an unexpected large positive number 
-      because the \"u\" stands for unsigned int, as per the following code: printf(\"%%u\", -455);.\n"); 
+   printf("Using the \"%%u\" argument for -455 generates an unexpected large positive number because the \"u\" stands for unsigned int, as per the following code: printf(\"%%u\", -455);.\n"); 
    printf("%u\n", -455);
    puts("");
    
-   printf("Finally, using an upper or lower case \"%%x\" argument for printing 455 
-      prints a corresponding upper or lower case hexadecimal output: printf("\%%x\", 455) and printf("\%%X\", 455);.\n");
+   printf("Finally, using an upper or lower case \"%%x\" argument for printing 455 prints a corresponding upper or lower case hexadecimal output: printf(\"%%x\", 455) and printf(\"%%X\", 455);.\n");
    printf("%x\n", 455); 
    printf("%X\n", 455);
    puts("");
