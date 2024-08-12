@@ -8,41 +8,50 @@
 
 int main(void)
 { 
-   printf("The following number, 455, is written to the screen using the following code: printf(\"%%d\", 455);\n");
-   printf("The \"d\" argument indicates that the number is to be printed as an integer\n");
+   printf("Below, 455 is written to the screen using the following code: printf(\"%%d\", 455);.\n");
+   printf("The \"d\" argument indicates that the number is to be printed as a decimal.\n");
    printf("%d\n", 455);
+   puts("");
    
-   printf("Now, 455 is written to the screen using the following code: printf(\"%%i\", 455);\n");
-   printf("The \"i\" argument indicates that the number is to be printed as an integer\n");
-   printf("The effect is the same as using \"d\"\n");
-   printf("%i\n", 455); 
+   printf("Now, 455 is written to the screen using the following code: printf(\"%%i\", 455);.\n");
+   printf("The \"i\" argument indicates that the number is to be printed as an integer.\n");
+   printf("The effect is the same as using \"d\".\n");
+   printf("%i\n", 455);
+   puts("");
 
-   printf("Now, 455 is written to the screen using the following code: printf(\"%%d\", +455);\n");
+   printf("Again, 455 is written to the screen using the following code: printf(\"%%d\", +455);.\n");
    printf("Notably, the \"+\" does not print.\n");
-   printf("%d\n", +455); 
+   printf("%d\n", +455);
+   puts("");
 
-   printf("Now, -455 is written to the screen using the following code: printf(\"%%d\", -455);\n");
-   printf("Notably, the \"-\" does print. It is redundant to use the \"+\"\n");
-   printf("%d\n", -455); 
+   printf("Now, -455 is written to the screen using the following code: printf(\"%%d\", -455);.\n");
+   printf("Notably, the \"-\" does print. It is redundant to use the \"+\".\n");
+   printf("%d\n", -455);
+   puts("");
    
-   printf("Below, the number 32000 is written to the screen using the following code: printf(\"%%hd\", 32000);\n");
+   printf("The number 32000 is written below to the screen using the following code: printf(\"%%hd\", 32000);.\n");
    printf("The \"hd\" argument indicates that the number is to be printed as a short int which uses 2 bytes of memory.\n");
    printf("%hd\n", 32000);
+   puts("");
    
-   printf("%ld\n", 2000000000L);
-   printf("The \"L\" after the 2000000000 prints a long integer that would not otherwise fit an int\n");
-   printf("However, you must also use the \"%%ld\" argument and not just a \"d\"\n");
+   printf("Now, the number 2000000000 is written to the screen using the following code: printf(\"%%ld\", 2000000000);.\n"); 
+   printf("%ld\n", 2000000000);
+   puts("");
    
+   printf("In the following code the \"%%o\" argument prints 455 below in octal form: printf(\"%%o\", 455);.\n");
    printf("%o\n", 455);
-   printf("The \"%%o\" argument prints 455 in octal form\n");
+   puts("");
    
-   printf("%u\n", 455);
+   printf("Using the \"%%u\" argument for -455 generates an unexpected large positive number 
+      because the \"u\" stands for unsigned int, as per the following code: printf(\"%%u\", -455);.\n"); 
    printf("%u\n", -455);
-   printf("Using the \"%%u\" argument for -455 generates an unexpected large positive number because the \"u\" stands for unsigned int\n"); 
+   puts("");
    
+   printf("Finally, using an upper or lower case \"%%x\" argument for printing 455 
+      prints a corresponding upper or lower case hexadecimal output: printf("\%%x\", 455) and printf("\%%X\", 455);.\n");
    printf("%x\n", 455); 
    printf("%X\n", 455);
-   printf("Using an upper or lower case \"%%x\" argument for printing 455 prints a corresponding upper or lower case hexadecimal output\n");
+   puts("");
    
    return 0;
 }
