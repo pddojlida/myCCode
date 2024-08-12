@@ -1,5 +1,8 @@
+// Adapted from "C How to Program" by P. J. Deitel and H. M. Deitel, 8th edition, Pearson
+// No IDE used
 
-// Using the integer conversion specifiers
+// The code below explains how integer conversion specifiers affect how an integer is printed out.
+// The original code just printed the numbers out without any explanation.
 
 #include <stdio.h>
 
